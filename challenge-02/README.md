@@ -9,13 +9,13 @@ function soma(a,b){
 }
 
 // Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
-d = soma(4,7) + 5
+var somatoria = soma(5,0)+5;
 
 // Qual o valor atualizado dessa variável?
 A váriavel retorna o valor NaN, mas se fosse retornar um valor seria 16,
 
 // Declare uma nova variável, sem valor.
-var variavel = null;
+var variavel;
 
 /*
 Crie uma função que adicione um valor à variável criada acima, e retorne a string:
@@ -39,7 +39,9 @@ Crie uma função com as seguintes características:
     Preencha todos os valores corretamente!
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
-?
+function multiplica(){
+
+}
 
 // Invoque a função criada acima, passando só dois números como argumento.
 ?
@@ -62,8 +64,28 @@ Crie uma função com as seguintes características:
 5. Se nenhum argumento for passado, retorne o valor booleano `false`.
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
-?
+function threeArgs(x,y,z){
+  if(x !== undefined && y === undefined && z === undefined){
+    return x;
+  }
+  else if(x !== undefined && y !== undefined & z === undefined){
+    return x + y;
+  }
+  else if(x !== undefined && y !== undefined && z !== undefined){
+    return (x + y) / z;
+  }
+  else if(x === undefined && y === undefined & z === undefined){
+    return false;
+  }
+  else{
+    return null;
+  }
+}
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
-?
+threeArgs(); //false
+threeArgs(5); //retorno do proprio argumento
+threeArgs(5,1); //retorno da soma dos 2 arumentos passados
+threeArgs(6,0,2);//3
+
 ```
