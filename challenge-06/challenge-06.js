@@ -44,7 +44,10 @@ função acima. Entre esses 4, adicione 1 que não esteja entre os 5 primeiros.
 Mostre os números de 20 a 30 no console (inclusive o 30), usando a estrutura de
 repetição "while".
 */
-// ?
+var num = 10;
+while (num<=30){
+console.log(num++);
+}
 
 /*
 Crie uma função chamada `convertToHex`, com as seguintes características:
